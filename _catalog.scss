@@ -1,0 +1,109 @@
+.catalog {
+    padding-top: 72px;
+
+    &__top {
+        height: 400px;
+        background-image: url(./img/catalog__top.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 70px;
+        color: #FFFFFF;
+        margin-top: 127px;
+        margin-bottom: 126px;
+    }
+
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+        transition: all 0.3s;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__select {
+        position: relative;
+        margin-bottom: 32px;
+
+        &:after {
+            content: "";
+            display: block;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            z-index: 1;
+            margin-top: -3px;
+            background-image: url(./img/select__triangle.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 11px;
+        }
+
+        & .select {
+            cursor: pointer;
+            display: block;
+            width: 288px;
+            height: 41px;
+            padding-left: 14px;
+            padding-right: 22px;
+            background: none;
+            border-radius: 20px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            outline: none;
+        }
+    }
+
+    &__product-box {
+        margin-top: 0;
+    }
+
+    &__product-content {
+        display: flex;
+        column-gap: 16px;
+        row-gap: 48px;
+        flex-wrap: wrap;
+    }
+
+    &__heading_mobile {
+        display: none;
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 10px;
+    padding-top: 64px;
+    padding-bottom: 41px;
+}
+
+.first_half {
+    margin-bottom: 48px;
+}
